@@ -1,4 +1,15 @@
-<h1>Programming I & II Labs</h1> <h2>Description</h2> This repository contains all lab work completed for <b>Programming 1</b> and <b>Programming 2</b>. Focus: <b>C++ fundamentals</b> → advanced <b>Object-Oriented Programming</b> concepts. Includes source code, examples, and mini-projects demonstrating practical programming skills. <br/> <h2>Course Outcomes & Skills</h2>
+<h1>Programming I & II Labs</h1> <h2>Description</h2> This repository contains all lab work completed for <b>Programming 1</b> and <b>Programming 2</b>. Focus: <b>C++ fundamentals</b> → advanced <b>Object-Oriented Programming</b> concepts. Includes source code, examples, and mini-projects demonstrating practical programming skills. For instance: <br/>
+- David & Goliath game<br/>
+- Jewlery Shop<br/>
+- Shape Manipulation<br/> 
+- Flower Shop<br/>
+- Robot Arm<br/>
+- Payment System<br/>
+- Gift Shop <br/>
+- University Adminstration<br/> 
+- Trails <br/>
+- Vehicle Garage<br/> 
+<h2>Course Outcomes & Skills</h2>
 <b>Programming 1 (C++ Basics)</b><br/>
 -Variables, data types, operators<br/>
 -Conditional statements & loops<br/>
