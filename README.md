@@ -9,6 +9,7 @@
 - University Adminstration<br/> 
 - Trails <br/>
 - Vehicle Garage<br/> 
+- Library <br/> 
 <h2>Course Outcomes & Skills</h2>
 <b>Programming 1 (C++ Basics)</b><br/>
 -Variables, data types, operators<br/>
