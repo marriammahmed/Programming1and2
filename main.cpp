@@ -1,39 +1,96 @@
-#pragma
 #include <iostream>
-#include "Character.hpp"
-
-
+#include <string>
 using namespace std;
 
-int main()
-{
-    Character goliath("Goliath", "Sharp sword", 20);
-    Character david("David", "Wooden sword", 10);
-    Character warrior("warrior", "Magic wand", 15);
-
-    while (david.isAlive() && goliath.isAlive() && warrior.isAlive())
-    {
-        david.displayState();
-        goliath.displayState();
-        warrior.displayState();
-
-        david.attack(warrior);
-        goliath.attack(warrior);
-        david.attack(goliath);
-
-        goliath.drinkLifePotion(10);
-        warrior.useMana(15);
+class flower{
+private:
+    string type, color;
+public:
+    flower():type("rose"),color("white"){}
+    flower(string t, string c):type(t),color(c){}
+    void display()const{
+        cout<<"Flower Type: "<<type<<", "<<"Color: "<<color<<endl;
     }
+    bool compare(const flower& obj)const{
+        return(type== obj.type && color==obj.color);
+    }
+};
 
-    if (david.isAlive())
-        cout << "David wins" << endl;
-    else if (goliath.isAlive())
-        cout << "Goliath wins" << endl;
-    else if (warrior.isAlive())
-        cout << "warrior wins" << endl;
+bool operator!=(const flower& f1, const flower& f2)
+    {
+        return!(f1.compare(f2));
+    }
+    
+bool operator==(const flower& f1, const flower& f2)
+        {
+            return(f1.compare(f2));
+        }
+ 
 
-    return 0;
-}
+class vase{
+private:
+    string name, color;
+    int size;
+    flower* flowersarray;
+public:
+    vase():name("Classic"), color("white"), size(20), flowersarray( new flower[15]){
+        for(int i=0; i<15; i++)
+        {
+            flowersarray[i]=flower("rose","white");
+        }
+    }
+        
+    vase( string n, string c, int s, flower* ar):name(n), color(c), size(s), flowersarray( new flower [s]){
+        for(int i=0; i<s; i++)
+        {
+            flowersarray[i]=ar[i];
+        }
+    }
+    
+    vase(const vase& obj):name(obj.name), color(obj.color), size(obj.size), flowersarray( new flower[obj.size]){
+        for(int i=0; i<15; i++)
+        {
+            flowersarray[i]= obj.flowersarray[i];
+        }
+    }
+    vase& operator==(const vase& obj){
+        if(this!= &obj){
+            delete[] flowersarray;
+            name=obj.name;
+            color=obj.color;
+            size= obj.size;
+            for(int i=0; i<size;i++)
+            {
+                flowersarray[i]= obj.flowersarray[i];
+            }
+        }
+        return* this;
+    }
+    
+    void display() const{
+        cout<<"Vase Design: "<< name<<" , "<<"Color: "<< color<< " , "<<"Size: "<<size<<endl;
+        cout<<"Flowers in the vase: "<<endl;
+        for(int i=0; i<15; i++)
+        {
+            flowersarray[i].display();
+        }
+        
+    }
+    ~vase() {
+        delete[] flowersarray;
+    }
+    };
 
-
-
+int main() {
+    flower whiteRoses[15];
+    vase classicVase;
+    flower specialFlowers[15];
+    vase specialVase("Special Design", "Red", 25, specialFlowers);
+    vase copiedVase = specialVase;
+    vase assignedVase;
+    assignedVase = classicVase;
+    classicVase.display();
+    specialVase.display();
+    copiedVase.display();
+    assignedVase.display();
+return 0; }
