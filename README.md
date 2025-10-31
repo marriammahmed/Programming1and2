@@ -29,4 +29,8 @@
 <br/> <h2>Languages & Tools Used</h2> - <b>C++</b><br/> - <b>Xcode / VS Code</b><br/> - <b>GitHub</b> 
 
 
-<br/> <h2> Walk-Through</h2> <p align="center"> Example Problem: <br/> <img src="https://i.imgur.com/PuNMMwd.png" height="80%" width="80%" alt="Example Output"/> <br/><br/>  Output: <br/> <img src="https://i.imgur.com/Jfhj69u.png" height="80%" width="80%" alt="Console Output"/> <br/><br/> </p>
+<br/> <h2> Walk-Through</h2> <p align="center"> Example Problem: <br/> <img src="https://i.imgur.com/PuNMMwd.png" height="80%" width="80%" alt="Example Output"/> <br/><br/>  Output: <br/> <img src="https://i.imgur.com/Jfhj69u.png" height="80%" width="80%" alt="Console Output"/> <br/><br/> 
+
+<br/> <img src="https://i.imgur.com/d1wG13Z.png" height="80%" width="80%" alt="Example Output"/> <br/><br/>  
+<br/> <img src="https://i.imgur.com/1vHgx9D.png" height="80%" width="80%" alt="Example Output"/> <br/><br/>  
+<br/> <img src="https://i.imgur.com/4iYpozz.png" height="80%" width="80%" alt="Example Output"/> <br/><br/>  
